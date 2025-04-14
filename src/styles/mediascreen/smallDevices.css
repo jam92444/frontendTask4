@@ -18,6 +18,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
   nav {
     padding: 12px 25px;
 
@@ -168,6 +171,35 @@
       .img1{
         width: 100%;
       }
+    }
+  }
+
+  #banner2{
+    margin-bottom: 4rem;
+    .plain{
+      display: none;
+    }
+    .images{
+      position: relative;
+      left: 0px;
+      grid-template-columns: repeat(3,1fr);
+      width: 100%;
+      .dummy{
+        display: none;
+      }
+      .card{
+        img{
+          width: 20px;
+        }
+      }
+      .cards{
+        p{
+          font-size: var(--regular-fontSize);
+          text-wrap: nowrap;
+        }
+      }
+
+
     }
   }
 

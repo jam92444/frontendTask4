@@ -152,6 +152,31 @@
     }
   }
 
+  #banner2{
+    margin-bottom: 4rem;
+    .plain{
+      display: none;
+    }
+    .images{
+      position: relative;
+      left: 0px;
+      width: 100%;
+      .card{
+        img{
+          width: 20px;
+        }
+      }
+      .cards{
+        p{
+          font-size: var(--regular-fontSize);
+          text-wrap: nowrap;
+        }
+      }
+
+
+    }
+  }
+
   /* private carter  */
 
   /* hero section */

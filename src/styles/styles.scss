@@ -57,6 +57,7 @@ select {
   --bg-black: #000000;
   --bg-white: #ffffff;
   --bg-lightPink: #fff2ea;
+  --bg-banner2: #191842;
 }
 @mixin flex {
   display: flex;
@@ -670,7 +671,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         .card {
-          img{
+          img {
             width: 50px;
           }
           background-color: var(--bg-white);
@@ -684,9 +685,8 @@ footer {
   }
 }
 
-
 // benefits
-#benefits{
+#benefits {
   width: 100%;
   padding: 2rem 12rem;
   margin-top: 2rem;
@@ -694,23 +694,21 @@ footer {
   @include flex();
   gap: 2rem;
   align-items: start;
-  .content{
+  .content {
     @include flex();
     flex-direction: column;
     align-items: start;
     gap: 1rem;
-    .bold{
+    .bold {
       font-size: var(--regular-fontSize);
       font-weight: var(--rubik-bold);
       color: var(--text-orange);
     }
-    .title{
-
-        font-size: var(--title-fontSize);
-        font-weight: var(--rubik-regular);
-      
+    .title {
+      font-size: var(--title-fontSize);
+      font-weight: var(--rubik-regular);
     }
-    .text{
+    .text {
       line-height: 1.7;
     }
     .subtitle {
@@ -718,20 +716,95 @@ footer {
       font-weight: var(--rubik-regular);
       color: var(--text-orange);
     }
-    button{
+    button {
       @include buttonStyle();
       background-color: var(--bg-black);
       color: var(--text-white);
     }
   }
 
-  .images{
+  .images {
     position: relative;
-    .img2{
+    .img2 {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// banner2
+#banner2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 26rem;
+
+  .plain {
+    width: (5 / 6) * 100%;
+    padding: 2rem 8rem;
+    background-color: var(--bg-orange);
+    color: var(--text-white);
+    min-height: 350px;
+    .title {
+      font-size: var(--title-fontSize);
+      font-family: var(--rubik-regular);
+      margin-bottom: 1.5rem;
+    }
+    .subtitle {
+      font-size: var(--subTitle-secondary-fontSize);
+      font-weight: var(--rubik-regular);
+      color: var(--text-white);
+    }
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: var(--bg-banner2);
+    min-width: (5/6) * 100%;
+    position: absolute;
+    top: 50%;
+    left: (1/6)*100%;
+    .card{
+      width: 100%;
+      height: 100%;
+      @include flex();
+      flex-direction: column;
+      gap: 1.5rem;
+      img{
+        width: 30px;
+      }
+      p{
+        font-size: var(--subTitle-secondary-fontSize);
+        font-weight: var(--rubik-regular);
+        color: var(--text-white);
+        line-height: 1.5;
+        margin-top: 30%;
+      }
+    }
+    .cards{
+      position: relative;
+      width:100%;
+      img{
+        width: 100%;
+      }
+      // .arrow{
+      //   width: ;
+      // }
+      p{
+        position: absolute;
+        bottom: 0px;
+        padding: 1rem 2rem;
+        left: 0;
+        width: 100%;
+        font-weight: var(--rubik-regular);
+        font-size: var(--subTitle-secondary-fontSize);
+        color: white;
+        background: linear-gradient(to top, #191842, transparent);
+        height: 25%;
+        text-align: center;
+      }
     }
   }
 }

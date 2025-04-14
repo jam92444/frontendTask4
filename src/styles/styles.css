@@ -59,6 +59,7 @@ select {
   --bg-black: #000000;
   --bg-white: #ffffff;
   --bg-lightPink: #fff2ea;
+  --bg-banner2: #191842;
 }
 
 nav {
@@ -746,4 +747,74 @@ footer .content .text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#banner2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 26rem;
+}
+#banner2 .plain {
+  width: 83.3333333333%;
+  padding: 2rem 8rem;
+  background-color: var(--bg-orange);
+  color: var(--text-white);
+  min-height: 350px;
+}
+#banner2 .plain .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+  margin-bottom: 1.5rem;
+}
+#banner2 .plain .subtitle {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-regular);
+  color: var(--text-white);
+}
+#banner2 .images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: var(--bg-banner2);
+  min-width: 83.3333333333%;
+  position: absolute;
+  top: 50%;
+  left: 16.6666666667%;
+}
+#banner2 .images .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#banner2 .images .card img {
+  width: 30px;
+}
+#banner2 .images .card p {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-regular);
+  color: var(--text-white);
+  line-height: 1.5;
+  margin-top: 30%;
+}
+#banner2 .images .cards {
+  position: relative;
+  width: 100%;
+}
+#banner2 .images .cards img {
+  width: 100%;
+}
+#banner2 .images .cards p {
+  position: absolute;
+  bottom: 0px;
+  padding: 1rem 2rem;
+  left: 0;
+  width: 100%;
+  font-weight: var(--rubik-regular);
+  font-size: var(--subTitle-secondary-fontSize);
+  color: white;
+  background: linear-gradient(to top, #191842, transparent);
+  height: 25%;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
