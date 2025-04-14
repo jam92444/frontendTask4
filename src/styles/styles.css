@@ -460,4 +460,290 @@ footer .content .email button {
 }
 footer .content .text {
   opacity: 0.7;
+}
+
+.header {
+  width: 100%;
+}
+
+#about {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#about .left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+#about .left .bold {
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+  font-size: var(--regular-fontSize);
+}
+#about .left .title {
+  font-size: var(--title-fontSize);
+  line-height: 1.3;
+  width: 90%;
+}
+#about .left .content {
+  line-height: 1.7;
+  width: 90%;
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-regular);
+}
+#about .top {
+  max-width: 564px;
+  position: absolute;
+  background-color: var(--bg-white);
+  top: -50%;
+  left: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+#about .top .title {
+  font-size: var(--title-secondary-fontSize);
+  line-height: 1.3;
+  width: 90%;
+}
+#about .top .states {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#about .top .states p {
+  padding: 8px 30px;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-size: var(--text-xs);
+  border: 0;
+  border-right: 1px solid gray;
+}
+#about .top .states .active {
+  background-color: var(--bg-orange);
+}
+#about .top form {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .top form .form-labels {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: start;
+}
+#about .top form .form-labels input {
+  width: 100%;
+}
+#about .top form .form-labels label {
+  font-weight: var(--rubik-regular);
+  font-size: var(--regular-fontSize);
+}
+#about .top form .form-labels select {
+  width: 100%;
+}
+#about .top form .form-labels .inside {
+  display: flex;
+  align-items: center;
+}
+#about .top form .form-labels .inside input {
+  width: 120px;
+  height: 40px;
+  gap: 1rem;
+}
+#about .top button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-size: var(--text-xs);
+}
+
+#popular {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+#popular .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+#popular .title .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#popular .title .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#popular .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+#popular .cards .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 100%;
+}
+#popular .cards .card img {
+  width: 100%;
+}
+#popular .cards .card p {
+  text-align: center;
+  font-size: var(--subTitle-secondary-fontSize);
+  padding: 1rem 2rem;
+}
+#popular button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  margin-top: 1rem;
+  font-size: var(--text-xs);
+}
+
+#service {
+  width: 100%;
+  padding: 0rem 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+#service .sample {
+  width: 100%;
+  background-color: var(--bg-lightPink);
+  text-align: center;
+  padding: 3rem;
+}
+#service .sample .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+#service .sample .title .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#service .sample .title .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#service .sample .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 4rem;
+}
+#service .sample .content img {
+  width: 540px;
+}
+#service .sample .content .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#service .sample .content .cards .card {
+  background-color: var(--bg-white);
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+}
+#service .sample .content .cards .card img {
+  width: 50px;
+}
+
+#benefits {
+  width: 100%;
+  padding: 2rem 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  align-items: start;
+}
+#benefits .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+#benefits .content .bold {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#benefits .content .title {
+  font-size: var(--title-fontSize);
+  font-weight: var(--rubik-regular);
+}
+#benefits .content .text {
+  line-height: 1.7;
+}
+#benefits .content .subtitle {
+  font-size: var(--title-secondary-fontSize);
+  font-weight: var(--rubik-regular);
+  color: var(--text-orange);
+}
+#benefits .content button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+}
+#benefits .images {
+  position: relative;
+}
+#benefits .images .img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=styles.css.map */

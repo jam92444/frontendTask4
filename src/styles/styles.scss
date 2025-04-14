@@ -71,8 +71,6 @@ select {
   text-transform: uppercase;
 }
 
-
-
 nav {
   @include flex();
   width: 100%;
@@ -102,7 +100,7 @@ nav {
       color: white;
     }
   }
-  .bar-label{
+  .bar-label {
     display: none;
   }
   input {
@@ -113,7 +111,6 @@ nav {
     display: none;
   }
 }
-
 
 // PRIVATE CARTER PAGE
 // hero section
@@ -169,7 +166,7 @@ nav {
     width: 100%;
     .states {
       @include flex();
-      
+
       .active {
         background-color: var(--bg-orange);
         color: var(--text-white);
@@ -453,5 +450,288 @@ footer {
   }
 }
 
+// Home page
+.header {
+  width: 100%;
+}
 
-// Home page 
+// about scetion
+#about {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  @include flex();
+  position: relative;
+  .left {
+    width: 50%;
+    @include flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    .bold {
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+      font-size: var(--regular-fontSize);
+    }
+
+    .title {
+      font-size: var(--title-fontSize);
+      line-height: 1.3;
+      width: 90%;
+    }
+
+    .content {
+      line-height: 1.7;
+      width: 90%;
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-regular);
+    }
+  }
+  .top {
+    max-width: 564px;
+    position: absolute;
+    background-color: var(--bg-white);
+    top: -50%;
+    left: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    @include flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    .title {
+      font-size: var(--title-secondary-fontSize);
+      line-height: 1.3;
+      width: 90%;
+    }
+
+    .states {
+      @include flex();
+      cursor: pointer;
+      p {
+        padding: 8px 30px;
+        background-color: var(--bg-black);
+        color: var(--text-white);
+        font-size: var(--text-xs);
+        border: 0;
+        border-right: 1px solid gray;
+      }
+      .active {
+        background-color: var(--bg-orange);
+      }
+    }
+
+    form {
+      width: 100%;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      .form-labels {
+        width: 100%;
+        @include flex();
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: start;
+        input {
+          width: 100%;
+        }
+        label {
+          font-weight: var(--rubik-regular);
+          font-size: var(--regular-fontSize);
+        }
+        select {
+          width: 100%;
+        }
+
+        .inside {
+          @include flex();
+          input {
+            width: 120px;
+            height: 40px;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+    button {
+      @include buttonStyle();
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      font-size: var(--text-xs);
+    }
+  }
+}
+
+// popular section
+#popular {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  @include flex();
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  .title {
+    @include flex();
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+
+    .subtitle {
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+    }
+
+    .title {
+      font-size: var(--title-fontSize);
+      font-family: var(--rubik-regular);
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    width: 100%;
+
+    .card {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        font-size: var(--subTitle-secondary-fontSize);
+        padding: 1rem 2rem;
+      }
+    }
+  }
+
+  button {
+    @include buttonStyle();
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    margin-top: 1rem;
+    font-size: var(--text-xs);
+  }
+}
+
+// service section
+#service {
+  width: 100%;
+  padding: 0rem 8rem;
+  margin-bottom: 2rem;
+  @include flex();
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  .sample {
+    width: 100%;
+    background-color: var(--bg-lightPink);
+    text-align: center;
+    padding: 3rem;
+    .title {
+      @include flex();
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+
+      .subtitle {
+        font-size: var(--regular-fontSize);
+        font-weight: var(--rubik-bold);
+        color: var(--text-orange);
+      }
+
+      .title {
+        font-size: var(--title-fontSize);
+        font-family: var(--rubik-regular);
+      }
+    }
+
+    .content {
+      width: 100%;
+      @include flex();
+      align-items: center;
+      gap: 4rem;
+      img {
+        width: 540px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        .card {
+          img{
+            width: 50px;
+          }
+          background-color: var(--bg-white);
+          padding: 2.5rem 2rem;
+          @include flex();
+          gap: 2rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+        }
+      }
+    }
+  }
+}
+
+
+// benefits
+#benefits{
+  width: 100%;
+  padding: 2rem 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include flex();
+  gap: 2rem;
+  align-items: start;
+  .content{
+    @include flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    .bold{
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+    }
+    .title{
+
+        font-size: var(--title-fontSize);
+        font-weight: var(--rubik-regular);
+      
+    }
+    .text{
+      line-height: 1.7;
+    }
+    .subtitle {
+      font-size: var(--title-secondary-fontSize);
+      font-weight: var(--rubik-regular);
+      color: var(--text-orange);
+    }
+    button{
+      @include buttonStyle();
+      background-color: var(--bg-black);
+      color: var(--text-white);
+    }
+  }
+
+  .images{
+    position: relative;
+    .img2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
