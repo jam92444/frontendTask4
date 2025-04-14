@@ -817,4 +817,257 @@ footer .content .text {
   background: linear-gradient(to top, #191842, transparent);
   height: 25%;
   text-align: center;
+}
+
+#testimonial {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+#testimonial .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+#testimonial .title .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#testimonial .title .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#testimonial .content {
+  display: flex;
+  align-items: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+}
+#testimonial .content .left {
+  width: 50%;
+  background-color: var(--bg-lightPink);
+  height: 370px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+#testimonial .content .left .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#testimonial .content .left .italic {
+  font-style: var(--italic-text);
+  font-size: var(--subTitle-secondary-fontSize);
+  line-height: 1.5;
+}
+#testimonial .content img {
+  width: 100%;
+  height: 370px;
+}
+
+#ride {
+  width: 100%;
+  background-color: var(--bg-lightPink);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0rem;
+}
+#ride img {
+  width: 80%;
+}
+#ride form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  padding-right: 6rem;
+}
+#ride form .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#ride form .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#ride form .inputs {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#ride form .inputs div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-regular);
+  gap: 10px;
+}
+#ride form .inputs div input {
+  width: 100%;
+  background-color: var(--bg-lightPink);
+  border: 2px solid black;
+  font-weight: var(--rubik-regular);
+}
+#ride form button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-size: var(--text-xs);
+}
+
+#insights {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+#insights .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+#insights .title .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#insights .title .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#insights .cards {
+  width: 100%;
+}
+#insights .cards .subCards {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+#insights .cards .subCards .card1 {
+  min-height: 450px;
+  background-color: var(--bg-lightPink);
+  width: 50%;
+}
+#insights .cards .subCards .card1 .content {
+  height: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+#insights .cards .subCards .card1 .content .bold {
+  font-Size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-black);
+}
+#insights .cards .subCards .card1 .content .subdetail {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-bold);
+}
+#insights .cards .subCards .card1 img {
+  width: 100%;
+}
+#insights .cards .subCards .card2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: start;
+  height: 450px;
+}
+#insights .cards .subCards .card2 .content {
+  width: 100%;
+  padding: 4rem 3rem;
+  text-align: start;
+  background-color: var(--bg-lightPink);
+  display: flex;
+  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 450px;
+}
+#insights .cards .subCards .card2 .content .bold {
+  font-Size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-black);
+}
+#insights .cards .subCards .card2 .content .subdetail {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-bold);
+}
+#insights .cards .subCards .card2 .content .text {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-regular);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+#insights .cards .subCards .card2 img {
+  width: 48%;
+  min-height: 450px;
+}
+#insights .cards .subCards .card {
+  width: 100%;
+  min-height: 450px;
+  background-color: var(--bg-lightPink);
+  text-align: center;
+  letter-spacing: 1px;
+}
+#insights .cards .subCards .card img {
+  width: 100%;
+}
+#insights .cards .subCards .card .content {
+  padding: 1rem 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#insights .cards .subCards .card .content .bold {
+  font-Size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-black);
+}
+#insights .cards .subCards .card .content .subdetail {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-bold);
 }/*# sourceMappingURL=styles.css.map */

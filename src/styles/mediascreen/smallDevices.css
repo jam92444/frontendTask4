@@ -175,6 +175,38 @@
     }
   }
 
+  #testimonial{
+    width: 100%;
+    padding: 2rem 2rem;
+
+    .content{
+      flex-direction: column;
+
+      .left{
+        width: 100%;
+        height: fit-content;
+      }
+
+      img{
+        height: auto;
+      }
+    }
+  }
+  #ride{
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    img{
+      width: 100%;
+    }
+    form{
+      padding: 2rem;
+      .inputs{
+        width: 100%;
+      }
+    }
+  }
+
   #banner2{
     margin-bottom: 4rem;
     .plain{
@@ -201,6 +233,34 @@
       }
 
 
+    }
+  }
+
+  #insights{
+    .cards{
+      .subCards{
+        width: 100%;
+        flex-wrap: wrap;
+        .card1{
+          display: none;
+        }
+        .card2{
+          width: 100%;
+          flex-direction: column;
+          overflow: hidden;
+          .content{
+            width: 100%;
+          }
+          img{
+            width: 100%;
+            display: none;
+          }
+          .card{
+            flex-wrap: wrap;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 

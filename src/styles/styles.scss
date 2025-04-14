@@ -760,22 +760,22 @@ footer {
 
   .images {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     background-color: var(--bg-banner2);
     min-width: (5/6) * 100%;
     position: absolute;
     top: 50%;
-    left: (1/6)*100%;
-    .card{
+    left: (1/6) * 100%;
+    .card {
       width: 100%;
       height: 100%;
       @include flex();
       flex-direction: column;
       gap: 1.5rem;
-      img{
+      img {
         width: 30px;
       }
-      p{
+      p {
         font-size: var(--subTitle-secondary-fontSize);
         font-weight: var(--rubik-regular);
         color: var(--text-white);
@@ -783,16 +783,16 @@ footer {
         margin-top: 30%;
       }
     }
-    .cards{
+    .cards {
       position: relative;
-      width:100%;
-      img{
+      width: 100%;
+      img {
         width: 100%;
       }
       // .arrow{
       //   width: ;
       // }
-      p{
+      p {
         position: absolute;
         bottom: 0px;
         padding: 1rem 2rem;
@@ -804,6 +804,271 @@ footer {
         background: linear-gradient(to top, #191842, transparent);
         height: 25%;
         text-align: center;
+      }
+    }
+  }
+}
+
+// testimonial
+#testimonial {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  @include flex();
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  .title {
+    @include flex();
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+
+    .subtitle {
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+    }
+
+    .title {
+      font-size: var(--title-fontSize);
+      font-family: var(--rubik-regular);
+    }
+  }
+
+  .content {
+    @include flex;
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+    .left {
+      width: 50%;
+      background-color: var(--bg-lightPink);
+      height: 370px;
+      @include flex();
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 4rem;
+      text-align: center;
+      .subtitle {
+        font-size: var(--regular-fontSize);
+        font-weight: var(--rubik-bold);
+        color: var(--text-orange);
+      }
+      .italic {
+        font-style: var(--italic-text);
+        font-size: var(--subTitle-secondary-fontSize);
+        line-height: 1.5;
+      }
+    }
+    img {
+      width: 100%;
+      height: 370px;
+    }
+  }
+}
+
+// ride
+#ride {
+  width: 100%;
+  background-color: var(--bg-lightPink);
+  @include flex();
+  gap: 4rem;
+  padding: 4rem 0rem;
+
+  img {
+    width: 80%;
+  }
+  form {
+    width: 100%;
+    @include flex();
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    padding-right: 6rem;
+    .subtitle {
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+    }
+
+    .title {
+      font-size: var(--title-fontSize);
+      font-family: var(--rubik-regular);
+    }
+
+    .inputs {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      div {
+        width: 100%;
+        @include flex();
+        flex-direction: column;
+        align-items: start;
+        font-size: var(--regular-fontSize);
+        font-weight: var(--rubik-regular);
+        gap: 10px;
+        input {
+          width: 100%;
+          background-color: var(--bg-lightPink);
+          border: 2px solid black;
+          font-weight: var(--rubik-regular);
+        }
+      }
+    }
+
+    button {
+      @include buttonStyle();
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      font-size: var(--text-xs);
+    }
+  }
+}
+
+// insights
+#insights {
+  width: 100%;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  @include flex();
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  .title {
+    @include flex();
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+
+    .subtitle {
+      font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-bold);
+      color: var(--text-orange);
+    }
+
+    .title {
+      font-size: var(--title-fontSize);
+      font-family: var(--rubik-regular);
+    }
+  }
+
+  .cards{
+    width: 100%;
+
+    .subCards{
+      width: 100%;
+      display: flex;
+      align-items: start;
+      gap: 4rem;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      gap: 2rem;
+      .card1{
+        min-height: 450px;
+        background-color: var(--bg-lightPink);
+        width: 50%;
+        // height: 420px;
+       
+        .content{
+          height: 100%;
+          text-align: center;
+          padding: 2rem 2rem;
+          @include flex();
+          gap: 1rem;
+          flex-direction: column;
+          .bold{
+            font-Size:var(--regular-fontSize);
+            font-weight: var(--rubik-bold);
+            color: var(--text-black);
+          }
+          .subdetail{
+            font-size: var(--subTitle-secondary-fontSize);
+            font-weight: var(--rubik-bold);
+
+          }
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .card2{
+        width: 100%;
+        // height: 420px;
+
+        @include flex();
+        align-items: start;
+        height: 450px;
+        .content{
+          width: 100%;
+          padding: 4rem 3rem;
+          text-align: start;
+          background-color: var(--bg-lightPink);
+          @include flex();
+          align-items: start;
+          flex-direction: column;
+          gap: 1.5rem;
+          height: 450px;
+          
+          .bold{
+            font-Size:var(--regular-fontSize);
+            font-weight: var(--rubik-bold);
+            color: var(--text-black);
+          }
+          .subdetail{
+            font-size: var(--subTitle-secondary-fontSize);
+            font-weight: var(--rubik-bold);
+
+          }
+          .text{
+            font-size: var(--regular-fontSize);
+            font-weight: var(--rubik-regular);
+            line-height: 1.5;
+            letter-spacing: 1px;
+          }
+
+        }
+        img{
+          // height: 100%;
+          width: 48%;
+        min-height: 450px;
+
+        }
+
+      }
+      .card{
+        width: 100%;
+        min-height: 450px;
+        background-color: var(--bg-lightPink);
+        text-align: center;
+        letter-spacing: 1px;
+        img{
+          width: 100%;
+
+        }
+        .content{
+          padding: 1rem 2rem;
+          height: 100%;
+          @include flex();
+          flex-direction: column;
+          gap: 1.5rem;
+          .bold{
+            font-Size:var(--regular-fontSize);
+            font-weight: var(--rubik-bold);
+            color: var(--text-black);
+          }
+          .subdetail{
+            font-size: var(--subTitle-secondary-fontSize);
+            font-weight: var(--rubik-bold);
+
+          }
+        }
       }
     }
   }
