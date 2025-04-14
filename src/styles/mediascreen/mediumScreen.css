@@ -39,7 +39,7 @@
     }
 
     .mobile-nav {
-        z-index: 20;
+      z-index: 20;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -76,6 +76,71 @@
       right: 0;
     }
   }
+
+  /* private carter  */
+
+  /* hero section */
+  #hero {
+    p {
+      left: 2rem;
+      width: 279px;
+      height: 75px;
+      font-size: var(--title-secondary-fontSize);
+    }
+  }
+
+  /* booking section */
+  #booking {
+    padding: 0px 2rem;
+    .bookingContent {
+      .states {
+        .active {
+          padding: 8px 25px;
+        }
+      }
+      .content {
+        padding: 40px 6rem;
+
+        .form {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .sample-content {
+      flex-direction: column;
+    }
+  }
+
+  /* cards */
+  #cards {
+    padding: 0px 2rem;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* fleets */
+  #fleets {
+    .card-section {
+      .cards {
+        padding: 0px 2rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  #banner {
+    padding: 0px 2rem;
+    div {
+      padding: 4rem 2rem;
+
+      .title,
+      .regular {
+        width: 100%;
+      }
+    }
+  }
+
   footer {
     display: grid;
     grid-template-columns: 2fr 1fr;

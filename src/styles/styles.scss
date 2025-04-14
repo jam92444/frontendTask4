@@ -71,6 +71,8 @@ select {
   text-transform: uppercase;
 }
 
+
+
 nav {
   @include flex();
   width: 100%;
@@ -112,6 +114,8 @@ nav {
   }
 }
 
+
+// PRIVATE CARTER PAGE
 // hero section
 #hero {
   width: 100%;
@@ -165,6 +169,7 @@ nav {
     width: 100%;
     .states {
       @include flex();
+      
       .active {
         background-color: var(--bg-orange);
         color: var(--text-white);
@@ -370,12 +375,12 @@ nav {
     }
     .title {
       font-size: var(--title-fontSize);
-      max-width: 50%;
+      width: 50%;
       line-height: 1.5;
     }
     .regular {
       font-size: var(--regular-fontSize);
-      max-width: 50%;
+      width: 50%;
       letter-spacing: 1px;
       line-height: 1.5;
     }
@@ -447,3 +452,6 @@ footer {
     }
   }
 }
+
+
+// Home page 
