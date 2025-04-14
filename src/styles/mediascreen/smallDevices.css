@@ -1,0 +1,53 @@
+:root {
+  --title-fontSize: 40px;
+  --title-secondary-fontSize: 30px;
+  --subTitle-secondary-fontSize: 20px;
+  --regular-fontSize: 15px;
+  --text-xs: 10px;
+  --footer-text-size: 12px;
+  --rubik-bold: 700;
+  --rubik-regular: 400;
+  --italic-text: italic;
+  --text-white: #fff;
+  --text-black: #000000;
+  --text-orange: #df661c;
+  --bg-orange: #df661c;
+  --bg-black: #000000;
+  --bg-white: #ffffff;
+  --bg-lightPink: #fff2ea;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 12px 25px;
+
+    justify-content: space-between;
+    ul {
+      display: none;
+    }
+    .btn {
+      display: none;
+    }
+    .bar-label {
+      width: fit-content;
+      display: block;
+      cursor: pointer;
+    }
+    input {
+      visibility: hidden;
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+
+    padding: 1rem 2rem;
+
+    & > :first-child {
+      grid-column: 1 / -1;
+    }
+  }
+}
