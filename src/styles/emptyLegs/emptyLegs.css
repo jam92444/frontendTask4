@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+a:link,
+a:visited {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select {
+  padding: 10px 20px;
+}
+
+:root {
+  --title-fontSize: 40px;
+  --title-secondary-fontSize: 30px;
+  --subTitle-secondary-fontSize: 20px;
+  --regular-fontSize: 15px;
+  --text-xs: 10px;
+  --footer-text-size: 12px;
+  --rubik-bold: 700;
+  --rubik-regular: 400;
+  --italic-text: italic;
+  --text-white: #fff;
+  --text-black: #000000;
+  --text-orange: #df661c;
+  --bg-orange: #df661c;
+  --bg-black: #000000;
+  --bg-white: #ffffff;
+  --bg-lightPink: #fff2ea;
+  --bg-banner2: #191842;
+}
+
+#bookLegs {
+  width: 100%;
+  background-color: var(--bg-orange);
+  display: flex;
+  align-items: center;
+  align-items: start;
+  gap: 4rem;
+  padding: 4rem;
+}
+#bookLegs .titles {
+  margin-top: 4rem;
+  width: 100%;
+}
+#bookLegs .titles .title {
+  font-size: var(--title-fontSize);
+  color: var(--text-white);
+  margin-bottom: 2rem;
+}
+#bookLegs .titles .subtitle {
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-regular);
+  color: var(--text-white);
+  line-height: 1.5;
+}
+#bookLegs form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  color: var(--text-white);
+  padding-right: 6rem;
+}
+#bookLegs form .subtitle {
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  color: var(--text-orange);
+}
+#bookLegs form .title {
+  font-size: var(--title-fontSize);
+  font-family: var(--rubik-regular);
+}
+#bookLegs form .inputs {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#bookLegs form .inputs div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-regular);
+  gap: 10px;
+}
+#bookLegs form .inputs div input {
+  width: 100%;
+  background-color: var(--bg-orange);
+  color: var(--text-white);
+  outline: 0;
+  border: 2px solid var(--text-white);
+  font-weight: var(--rubik-regular);
+}
+#bookLegs form .inputs div ::-moz-placeholder {
+  color: var(--text-white);
+}
+#bookLegs form .inputs div ::placeholder {
+  color: var(--text-white);
+}
+#bookLegs form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#bookLegs form button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-size: var(--text-xs);
+}
+#bookLegs form .reset {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  background-color: var(--bg-orange);
+  border: 2px solid var(--bg-white);
+  font-size: var(--regular-fontSize);
+}
+
+#availability {
+  width: 100%;
+  padding: 4rem 6rem;
+}
+#availability .title {
+  text-align: center;
+  font-size: var(--title-fontSize);
+  font-weight: var(--rubik-regular);
+  margin-bottom: 2rem;
+}
+#availability .flights {
+  width: 100%;
+}
+#availability .flights .section1 .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-lightPink);
+  padding: 0.5rem 1rem;
+}
+#availability .flights .section1 .head .bold {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-weight: var(--rubik-bold);
+  font-size: 14px;
+}
+#availability .flights .section1 .head .img {
+  width: 30%;
+  padding-left: 1rem;
+}
+#availability .flights .section1 .head .last {
+  width: 60%;
+}
+#availability .flights .section1 > *:not(:first-child) {
+  border-top: 2px solid #d1d5db;
+}
+#availability .flights .section1 .body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  padding: 1.5rem 0.3rem;
+}
+#availability .flights .section1 .body .route {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-weight: var(--rubik-bold);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-bold);
+  gap: 1rem;
+  width: 100%;
+  padding: 0 2rem 0 0.2rem;
+}
+#availability .flights .section1 .body .timing {
+  width: 30%;
+  text-align: start;
+  font-size: 16px;
+}
+#availability .flights .section1 .body .timing span {
+  display: none;
+}
+#availability .flights .section1 .body .avail {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#availability .flights .section1 .body .avail .seats {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+#availability .flights .section1 .body .avail .seats p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#availability .flights .section1 .body .avail .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#availability .flights .section1 .body .avail .btn button {
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  background-color: var(--bg-orange);
+  color: var(--text-white);
+  font-size: var(--text-xs);
+  border: 2px solid var(--text-orange);
+}
+#availability .flights .section1 .body .avail .btn .enq {
+  background-color: var(--bg-white);
+  color: var(--text-black);
+}/*# sourceMappingURL=emptyLegs.css.map */
