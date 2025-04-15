@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/font/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/font/Rubik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/font/Rubik-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+body {
+  font-family: "Rubik";
+  overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select {
+  padding: 10px 20px;
+}
+
+:root {
+  --title-fontSize: 40px;
+  --title-secondary-fontSize: 30px;
+  --subTitle-secondary-fontSize: 20px;
+  --regular-fontSize: 15px;
+  --text-xs: 10px;
+  --footer-text-size: 12px;
+  --rubik-bold: 700;
+  --rubik-regular: 400;
+  --italic-text: italic;
+  --text-white: #fff;
+  --text-black: #000000;
+  --text-orange: #df661c;
+  --bg-orange: #df661c;
+  --bg-black: #000000;
+  --bg-white: #ffffff;
+  --bg-lightPink: #fff2ea;
+  --bg-banner2: #191842;
+}
+
+#executive {
+  width: 100%;
+  background-color: var(--bg-orange);
+  height: 50vh;
+  position: relative;
+}
+#executive p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--title-fontSize);
+  font-weight: var(--rubik-regular);
+  color: var(--text-white);
+  letter-spacing: 1.2px;
+}
+
+#jet2 {
+  padding: 4rem 4rem;
+  width: 100%;
+}
+#jet2 .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  align-items: start;
+  flex-direction: column;
+}
+#jet2 .cards .card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-items: start;
+  gap: 4rem;
+}
+#jet2 .cards .card img {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#jet2 .cards .card .content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+#jet2 .cards .card .content .title {
+  font-size: var(--title-fontSize);
+  font-weight: var(--rubik-regular);
+}
+#jet2 .cards .card .content .bold {
+  color: var(--text-orange);
+  font-size: var(--subTitle-secondary-fontSize);
+  font-weight: var(--rubik-bold);
+}
+#jet2 .cards .card .content div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 1rem;
+}
+#jet2 .cards .card .content div p {
+  display: flex;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  font-weight: var(--rubik-regular);
+}
+#jet2 .cards .card .content div p span {
+  width: 100%;
+  font-size: var(--regular-fontSize);
+}
+#jet2 .cards .card .content div p .bold {
+  font-size: var(--rubik-regular);
+  color: var(--text-black);
+}
+
+#banner4 {
+  width: 100%;
+  background-color: var(--bg-lightPink);
+  padding: 4rem 8rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+#banner4 img {
+  width: 100%;
+}
+#banner4 div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+#banner4 div .title {
+  font-size: var(--title-fontSize);
+  font-weight: var(--rubik-regular);
+}
+#banner4 div .content {
+  width: 80%;
+  line-height: 1.6rem;
+}/*# sourceMappingURL=carter1.css.map */

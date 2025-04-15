@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  body{
+  body {
     max-width: 100vw;
     overflow-x: hidden;
   }
@@ -133,19 +133,19 @@
     }
   }
   /* service */
-  #service{
+  #service {
     padding: 0rem 2rem;
     width: 100%;
     /* background-color: var(--bg-lightPink); */
-    .sample{
+    .sample {
       width: 100%;
       padding: 4rem 3rem;
-      
-      .content{
+
+      .content {
         width: 100%;
         /* display: flex; */
         flex-direction: column;
-        img{
+        img {
           width: 80%;
         }
         .cards {
@@ -154,108 +154,105 @@
           gap: 2rem;
           .card {
             padding: 2rem 1rem;
-            img{
+            img {
               width: 80px;
             }
           }
         }
-    
       }
     }
   }
 
-  #benefits{
+  #benefits {
     flex-direction: column;
     align-items: start;
     padding: 2rem;
-    .images{
-      .img1{
+    .images {
+      .img1 {
         width: 100%;
       }
     }
   }
 
-  #testimonial{
+  #testimonial {
     width: 100%;
     padding: 2rem 2rem;
 
-    .content{
+    .content {
       flex-direction: column;
 
-      .left{
+      .left {
         width: 100%;
         height: fit-content;
       }
 
-      img{
+      img {
         height: auto;
       }
     }
   }
-  #ride{
+  #ride {
     width: 100%;
     flex-direction: column;
     margin-bottom: 2rem;
-    img{
+    img {
       width: 100%;
     }
-    form{
+    form {
       padding: 2rem;
-      .inputs{
+      .inputs {
         width: 100%;
       }
     }
   }
 
-  #banner2{
+  #banner2 {
     margin-bottom: 4rem;
-    .plain{
+    .plain {
       display: none;
     }
-    .images{
+    .images {
       position: relative;
       left: 0px;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       width: 100%;
-      .dummy{
+      .dummy {
         display: none;
       }
-      .card{
-        img{
+      .card {
+        img {
           width: 20px;
         }
       }
-      .cards{
-        p{
+      .cards {
+        p {
           font-size: var(--regular-fontSize);
           text-wrap: nowrap;
         }
       }
-
-
     }
   }
 
-  #insights{
-    .cards{
-      .subCards{
+  #insights {
+    .cards {
+      .subCards {
         width: 100%;
         flex-wrap: wrap;
-        .card1{
+        .card1 {
           display: none;
         }
-        .card2{
+        .card2 {
           width: 100%;
           flex-direction: column;
           overflow: hidden;
-          .content{
+          .content {
             width: 100%;
           }
-          img{
+          img {
             width: 100%;
             display: none;
           }
-          .card{
+          .card {
             flex-wrap: wrap;
             width: 100%;
           }
@@ -263,7 +260,6 @@
       }
     }
   }
-
 
   /* private carter  */
 
@@ -337,18 +333,17 @@
     }
   }
 
-
   /* empty legs */
-  #bookLegs{
+  #bookLegs {
     width: 100%;
     flex-direction: column;
     margin-bottom: 2rem;
-    img{
+    img {
       width: 100%;
     }
-    form{
+    form {
       padding: 2rem;
-      .inputs{
+      .inputs {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
       }
@@ -356,29 +351,29 @@
   }
 
   /* avialability */
-  #availability{
+  #availability {
     padding: 1rem 2rem;
 
-    .flights{
-      .section1{
-        .head{
-          .img{
+    .flights {
+      .section1 {
+        .head {
+          .img {
             display: none;
           }
         }
-        .body{ 
+        .body {
           flex-direction: column;
           gap: 2rem;
-          .avail{
+          .avail {
             flex-direction: row;
             width: 100%;
             align-items: end;
           }
-          .timing{
+          .timing {
             display: flex;
             align-items: center;
-            gap: 1rem ;
-            span{
+            gap: 1rem;
+            span {
               display: block;
               font-weight: bold;
             }
@@ -398,4 +393,30 @@
       }
     }
   }
+  #jet2 {
+    padding: 2rem;
+    width: 100%;
+    .cards {
+      gap: 2rem;
+      .card {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+        .content {
+          div {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+      }
+    }
+  }
+  #banner4 {
+    padding: 2rem 2rem;
+      flex-direction: column;
+      div{
+        align-items: center;
+      }
+    }
 }

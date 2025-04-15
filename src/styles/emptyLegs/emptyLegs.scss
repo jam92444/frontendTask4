@@ -10,21 +10,21 @@ body {
 
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Regular.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Bold.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Italic.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -80,7 +80,6 @@ select {
   align-items: start;
   gap: 4rem;
   padding: 4rem;
-
   .titles {
     margin-top: 4rem;
     width: 100%;
@@ -206,6 +205,7 @@ select {
       .body {
         width: 100%;
         @include flex();
+        font-weight: var(--rubik-regular);
         // flex-wrap: wrap;
         align-items: start;
         justify-content: space-between;
@@ -218,7 +218,6 @@ select {
           font-size: 14px;
           @include flex();
           font-size: var(--regular-fontSize);
-          font-weight: var(--rubik-bold);
           gap: 1rem;
           width: 100%;
           padding: 0 2rem 0 0.2rem;
@@ -293,6 +292,7 @@ select {
     }
     .regular {
       font-size: var(--regular-fontSize);
+      font-weight: var(--rubik-regular);
       width: 40%;
     //   letter-spacing: 1px;
       line-height: 2;

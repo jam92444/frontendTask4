@@ -11,19 +11,19 @@ body {
 
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Regular.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Bold.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("fonts/Rubik-Italic.ttf") format("truetype");
+  src: url("../../assets/font/Rubik-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -204,6 +204,7 @@ select {
   width: 100%;
   display: flex;
   align-items: center;
+  font-weight: var(--rubik-regular);
   align-items: start;
   justify-content: space-between;
   padding: 1.5rem 0.3rem;
@@ -216,7 +217,6 @@ select {
   display: flex;
   align-items: center;
   font-size: var(--regular-fontSize);
-  font-weight: var(--rubik-bold);
   gap: 1rem;
   width: 100%;
   padding: 0 2rem 0 0.2rem;
@@ -296,6 +296,7 @@ select {
 }
 #banner3 div .regular {
   font-size: var(--regular-fontSize);
+  font-weight: var(--rubik-regular);
   width: 40%;
   line-height: 2;
 }

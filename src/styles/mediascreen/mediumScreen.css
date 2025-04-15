@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  body{
+  body {
     max-width: 100vw;
     overflow-x: hidden;
   }
@@ -95,7 +95,7 @@
       .title {
         text-align: center;
       }
-  
+
       .content {
         text-align: center;
       }
@@ -125,86 +125,83 @@
     }
   }
 
-  #service{
+  #service {
     padding: 0rem 4rem;
     width: 100%;
     /* background-color: var(--bg-lightPink); */
-    .sample{
+    .sample {
       width: 100%;
       padding: 4rem 3rem;
-      
-      .content{
+
+      .content {
         width: 100%;
         /* display: flex; */
         flex-direction: column;
-        img{
+        img {
           width: 50%;
         }
-    
       }
     }
   }
 
-  #benefits{
+  #benefits {
     flex-direction: column;
     align-items: start;
     padding: 2rem;
-    .images{
-      .img1{
+    .images {
+      .img1 {
         width: 100%;
       }
     }
   }
 
-  #banner2{
+  #banner2 {
     margin-bottom: 4rem;
-    .plain{
+    .plain {
       display: none;
     }
-    .images{
+    .images {
       position: relative;
       left: 0px;
       width: 100%;
-      .card{
-        img{
+      .card {
+        img {
           width: 20px;
         }
       }
-      .cards{
-        p{
+      .cards {
+        p {
           font-size: var(--regular-fontSize);
           text-wrap: nowrap;
         }
       }
-
-
     }
   }
 
-  #testimonial{
+  #testimonial {
     width: 100%;
     padding: 2rem 2rem;
 
-    .content{
+    .content {
       flex-direction: column;
 
-      .left{
+      .left {
         width: 100%;
         height: fit-content;
       }
     }
   }
 
-  #ride{
+  #ride {
     width: 100%;
     flex-direction: column;
     margin-bottom: 2rem;
-    img{
+    img {
       width: 100%;
     }
-    form{
+    form {
       padding: 2rem;
-      .inputs{
+      .inputs {
         width: 100%;
       }
     }
@@ -252,25 +249,25 @@
   }
 
   /* insights */
-  #insights{
-    .cards{
-      .subCards{
+  #insights {
+    .cards {
+      .subCards {
         width: 100%;
         flex-wrap: wrap;
-        .card1{
+        .card1 {
           display: none;
         }
-        .card2{
+        .card2 {
           width: 100%;
           height: 350px;
           overflow: hidden;
-          .content{
+          .content {
             width: 100%;
           }
-          img{
+          img {
             width: 50%;
           }
-          .card{
+          .card {
             flex-wrap: wrap;
             width: 100%;
           }
@@ -315,30 +312,30 @@
   }
 
   /* empty legs */
-  #bookLegs{
+  #bookLegs {
     width: 100%;
     flex-direction: column;
     padding: 4rem;
     margin-bottom: 2rem;
-    img{
+    img {
       width: 100%;
     }
-    form{
+    form {
       padding: 2rem;
-      .inputs{
+      .inputs {
         width: 100%;
       }
     }
   }
 
   /* availability */
-  #availability{
+  #availability {
     padding: 2rem 4rem;
 
-    .flights{
-      .section1{
-        .body{
-          .avail{
+    .flights {
+      .section1 {
+        .body {
+          .avail {
             flex-direction: column;
             align-items: start;
           }
@@ -358,6 +355,25 @@
     }
   }
 
+  #jet2 {
+    padding: 4rem ;
+    width: 100%;
 
-
+    .cards {
+      gap: 2rem;
+      .card {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  #banner4 {
+  padding: 2rem 2rem;
+    flex-direction: column;
+    div{
+      align-items: center;
+    }
+  }
 }
+

@@ -69,6 +69,7 @@ nav {
   background: var(--bg-white);
   justify-content: space-between;
   padding: 18px 8rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 nav ul {
   display: flex;
@@ -777,12 +778,14 @@ footer .content .text {
   background-color: var(--bg-banner2);
   min-width: 83.3333333333%;
   position: absolute;
+  cursor: pointer;
   top: 50%;
   left: 16.6666666667%;
 }
 #banner2 .images .card {
   width: 100%;
   height: 100%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   flex-direction: column;
