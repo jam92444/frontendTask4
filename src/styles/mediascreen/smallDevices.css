@@ -370,8 +370,9 @@
           flex-direction: column;
           gap: 2rem;
           .avail{
-            flex-direction: column;
-            align-items: start;
+            flex-direction: row;
+            width: 100%;
+            align-items: end;
           }
           .timing{
             display: flex;
@@ -383,6 +384,17 @@
             }
           }
         }
+      }
+    }
+  }
+  /* banner3 */
+  #banner3 {
+    div {
+      padding: 3rem 4rem;
+
+      .title,
+      .regular {
+        width: 100%;
       }
     }
   }

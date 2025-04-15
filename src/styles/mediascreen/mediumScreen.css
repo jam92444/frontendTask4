@@ -346,6 +346,17 @@
       }
     }
   }
+  /* banner3 */
+  #banner3 {
+    div {
+      padding: 4rem 2rem;
+
+      .title,
+      .regular {
+        width: 100%;
+      }
+    }
+  }
 
 
 
